@@ -1,0 +1,567 @@
+
+body{
+    scroll-behavior: smooth;
+    background-color: rgb(14, 13, 13) !important;
+}
+.bg {
+    height: 100vh;
+    width: 100%;
+    background-image: url('./images/bg11.gif') !important;
+    background-size: cover;
+    background-blend-mode: color-dodge;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: auto;
+}
+
+.heading {
+    color: white;
+    font-size: 30px;
+}
+
+.nav-link {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.heading>span {
+    color: hotpink;
+}
+
+.text {
+    color: white;
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.name {
+    color: orange;
+    font-size: 10vh;
+    font-family: "Sofia", sans-serif;
+
+}
+
+.content {
+    padding-top: 25vh;
+}
+
+.line1 {
+    width: 25%;
+    height: 3px;
+    background-color: dodgerblue;
+}
+
+.line2 {
+    width: 28%;
+    height: 3px;
+    margin-left: 40px;
+    background-color: dodgerblue;
+}
+
+.line3 {
+    width: 28%;
+    height: 3px;
+    background-color: dodgerblue;
+    float: right;
+}
+
+.position {
+    color: white;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.active {
+    color: dodgerblue;
+}
+
+.hireme {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding: 10px 35px;
+    border-radius: 4px;
+    border: 2px solid hotpink;
+    font-size: 20px;
+    box-shadow: 0px 5px 10px 0px black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hireme:hover {
+    text-decoration: none;
+    color: black;
+    background-color: hotpink;
+}
+
+.c1,
+.c2,
+.c3,
+.c4,
+.c5 {
+    height: 40px;
+    border-radius: 30px;
+    opacity: 0.2;
+}
+
+.shades {
+    padding-top: 20%;
+}
+
+.c1 {
+    width: 150px;
+    position: absolute;
+    background-color: yellow;
+    animation: shade1 3s infinite;
+}
+
+.c2 {
+    margin-top: 70px;
+    width: 70px;
+    position: absolute;
+    background-color: hotpink;
+    animation: shade2 3s infinite;
+}
+
+.c3 {
+    width: 70px;
+    position: absolute;
+    background-color: red;
+    margin-top: 70px;
+    animation: shade3 3s infinite;
+}
+
+.c4 {
+    width: 70px;
+    position: absolute;
+    background-color: aquamarine;
+    margin-top: 140px;
+    animation: shade4 3s infinite;
+}
+
+.c5 {
+    width: 140px;
+    position: absolute;
+    background-color: aqua;
+    margin-top: 140px;
+    animation: shade5 3s infinite;
+}
+
+/*----Animation background----*/
+@keyframes shade1 {
+    0% {
+        left: 0px;
+        width: 70px;
+    }
+
+    100% {
+        left: 50%;
+    }
+}
+
+@keyframes shade2 {
+    0% {
+        right: 0px;
+        width: 150px;
+    }
+
+    100% {
+        right: 50%;
+    }
+}
+
+@keyframes shade3 {
+    0% {
+        left: 0px;
+        width: 150px;
+    }
+
+    100% {
+        left: 50%;
+    }
+}
+
+@keyframes shade5 {
+    0% {
+        right: 0px;
+        width: 150px;
+    }
+
+    100% {
+        right: 50%;
+    }
+}
+
+@keyframes shade4 {
+    0% {
+        left: 0px;
+        width: 70px;
+    }
+
+    100% {
+        left: 50%;
+    }
+}
+
+/*----media queries for mobile--*/
+
+@media screen and (max-width:600px) {
+
+    .name {
+        font-size: 40px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .position {
+        font-size: 25px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .aboutme {
+        font-size: 5px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .image {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:1334px) {
+    .dev {
+        display: none;
+    }
+
+}
+
+.aboutme {
+    color: hotpink;
+    font-size: 5vh;
+    text-align: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbars {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.image {
+    border-radius: 50px;
+    box-shadow: 0px 20px 30px 0px rgb(34, 34, 34);
+
+}
+
+.helloname {
+    color: white;
+    font-size: 30px;
+}
+
+.description_about {
+    color: white;
+    font-size: 20px;
+    text-indent: 10vh;
+    word-spacing: 2px;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.helloname span b {
+    color: hotpink;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: cursive;
+    animation: helloname 5s infinite;
+    opacity: 0.1;
+}
+
+/*----Animation for name----*/
+
+@keyframes helloname {
+    0% {
+        opacity: 0.0;
+        font-size: 10px;
+    }
+
+    20% {
+        opacity: 0.3;
+    }
+
+    40% {
+        opacity: 0.4;
+    }
+
+    60% {
+        opacity: 0.6;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.end {
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    margin-top: 100px;
+}
+
+.html,
+.css,
+.adobe,
+.js,
+.java,
+.bootstrap {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.adobe_percent {
+    width: 100%;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.adobe_percentage {
+    width: 70%;
+    animation: adobe 3s infinite;
+    border-radius: 20px;
+    height: 18px;
+    background-image: linear-gradient(to right, rgb(225, 17, 104), rgb(255, 18, 251));
+
+}
+
+.css_percent {
+    width: 100%;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.css_percentage {
+    width: 75%;
+    animation: css 3s infinite;
+    border-radius: 20px;
+    height: 18px;
+    background-image: linear-gradient(to right, rgb(225, 17, 104), rgb(255, 18, 251));
+}
+
+.boot_percent {
+    width: 100%;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.boot_percentage {
+    width: 70%;
+    animation: boot 3s infinite;
+    border-radius: 20px;
+    height: 18px;
+    background-image: linear-gradient(to right, rgb(225, 17, 104), rgb(255, 18, 251));
+}
+
+.js_percent {
+    width: 100%;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.js_percentage {
+    width: 30%;
+    animation: js 3s infinite;
+    border-radius: 20px;
+    height: 18px;
+    background-image: linear-gradient(to right, rgb(225, 17, 104), rgb(255, 18, 251));
+}
+
+.java_percent {
+    width: 100%;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.java_percentage {
+    width: 65%;
+    animation: java 3s infinite;
+    border-radius: 20px;
+    height: 18px;
+    background-image: linear-gradient(to right, rgb(225, 17, 104), rgb(255, 18, 251));
+}
+
+.html_percent {
+    width: 100%;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.html_percentage {
+    width: 90%;
+    animation: html 3s infinite;
+    border-radius: 20px;
+    height: 18px;
+    background-image: linear-gradient(to right, rgb(225, 17, 104), rgb(255, 18, 251));
+}
+
+/*----Animation for percentages----*/
+
+@keyframes adobe {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes html {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 75%
+    }
+}
+
+@keyframes boot {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes js {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes java {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+.fa-user,
+.fa-map-marker,
+.fa-phone,
+.fa-envelope {
+    font-size: 20px;
+    color: yellow;
+    text-align: left;
+}
+
+.foot_icon {
+    width: 25%;
+    height: 30px;
+    background-color: rgb(42, 42, 42);
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.foot_name {
+    width: 100%;
+    height: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(42, 42, 42);
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.foot_email {
+    font-size: 15px;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    color: black;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid white;
+
+}
+
+.message {
+    height: 130px;
+}
+
+.bgnav {
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(12, 12, 12);
+}
+
+.fa-bars {
+    color: white;
+    font-size: 20px;
+}
+
+.active {
+    color: dodgerblue;
+}
+
+.nav_bar {
+    margin-left: 15%;
+    text-align: center;
+}
+
+.dev {
+    letter-spacing: 15px;
+
+}
+
+.per_num {
+    text-align: end;
+    color: gold;
+}
